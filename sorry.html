@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I'm Sorry</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:flex-start;
+align-items:center;
+font-family:'Poppins',sans-serif;
+color:white;
+background:#0a0a0f;
+overflow:hidden;
+text-align:center;
+}
+
+/* STAR BACKGROUND */
+.stars{
+position:fixed;
+width:100%;
+height:100%;
+background:radial-gradient(white 1px, transparent 1px);
+background-size:3px 3px;
+animation:moveStars 70s linear infinite;
+opacity:0.25;
+}
+
+@keyframes moveStars{
+from{background-position:0 0;}
+to{background-position:10000px 5000px;}
+}
+
+/* HEADING */
+h1{
+font-family:'Playfair Display',serif;
+font-size:60px;
+margin-top:70px;
+background:linear-gradient(90deg,#fff,#ffd700,#fff);
+background-size:200%;
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+animation:shine 6s linear infinite;
+}
+
+@keyframes shine{
+to{background-position:200% center;}
+}
+
+/* GLASS CARD */
+.card{
+margin-top:40px;
+width:60%;
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(18px);
+padding:40px;
+border-radius:25px;
+box-shadow:0 0 40px rgba(255,215,0,0.2);
+animation:fadeIn 2s ease forwards;
+opacity:0;
+}
+
+/* PARAGRAPH */
+p{
+font-size:20px;
+line-height:1.8;
+opacity:0.95;
+}
+
+/* ANIMATION */
+@keyframes fadeIn{
+to{opacity:1;}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="stars"></div>
+
+<h1>Please Mujhe Maaf Kar Do</h1>
+
+<div class="card">
+<p>
+
+Mujhse galti hui hai… aur main usse ignore nahi kar raha.  
+Kabhi kabhi insaan apne words ya actions ka weight us waqt nahi samajh pata,  
+lekin baad me realize hota hai ki usne kisi important insaan ko hurt kar diya.
+
+Sach kahu to mujhe sabse zyada bura is baat ka lag raha hai  
+ki jis insaan ko main khush dekhna chahta hoon,  
+usi ko meri wajah se takleef hui.
+
+Main perfect nahi hoon… par meri feelings real hain.  
+Agar possible ho to ek chance aur de do,  
+taaki main sirf words se nahi, actions se prove kar saku  
+ki tum mere liye kitni important ho.
+
+Bas itna hi kehna hai…  
+I'm truly sorry.
+
+</p>
+</div>
+
+</body>
+</html>
